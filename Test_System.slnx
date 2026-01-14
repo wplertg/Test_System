@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/解决方案项/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="DAL/BLL.csproj" />
   <Project Path="IBLL/IBLL.csproj" />
   <Project Path="IServer/IServer.csproj" />
