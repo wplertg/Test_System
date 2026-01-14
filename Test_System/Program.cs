@@ -1,14 +1,16 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+ï»¿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Models;
 using Serilog;
 using System.Text;
+using Tools.Common;
+using Tools.Extensions;
 using Tools.JWT;
 using Tools.middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddHttpContextAccessor();   // ? ±ØĞë
+builder.Services.AddHttpContextAccessor();   // ? å¿…é¡»
 builder.Services.AddScoped<CurrentUser>();
 builder.Services.AddScoped<ICurrentUser, CurrentUser>();
 Log.Logger = new LoggerConfiguration()
@@ -17,7 +19,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File(
         path: "logs/log-.txt",
         rollingInterval: RollingInterval.Day,
-        retainedFileCountLimit: 7   // Ö»±£Áô×î½ü 7 Ìì
+        retainedFileCountLimit: 7   // åªä¿ç•™æœ€è¿‘ 7 å¤©
     )
     .CreateLogger();
 
@@ -48,11 +50,16 @@ builder.Services
             )
         };
     });
-
+builder.Services.AddVisitorQuartzJobs();
+builder.Services.AddScoped<ExcelHelper>();
 builder.Services.AddScoped<JwtTokenHelper>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTcpClients();
+builder.Services.AddSerialPorts();
+
 
 var app = builder.Build();
 
