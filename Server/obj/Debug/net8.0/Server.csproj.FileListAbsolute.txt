@@ -1,0 +1,11 @@
+D:\Project\Study\Test_System\Server\bin\Debug\net8.0\Server.deps.json
+D:\Project\Study\Test_System\Server\bin\Debug\net8.0\Server.dll
+D:\Project\Study\Test_System\Server\bin\Debug\net8.0\Server.pdb
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.AssemblyInfo.cs
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.dll
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\refint\Server.dll
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\Server.pdb
+D:\Project\Study\Test_System\Server\obj\Debug\net8.0\ref\Server.dll

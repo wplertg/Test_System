@@ -1,0 +1,15 @@
+D:\Project\Study\Test_System\Tool\bin\Debug\net8.0\Tools.deps.json
+D:\Project\Study\Test_System\Tool\bin\Debug\net8.0\Tools.dll
+D:\Project\Study\Test_System\Tool\bin\Debug\net8.0\Tools.pdb
+D:\Project\Study\Test_System\Tool\bin\Debug\net8.0\Models.dll
+D:\Project\Study\Test_System\Tool\bin\Debug\net8.0\Models.pdb
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.csproj.AssemblyReference.cache
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.AssemblyInfoInputs.cache
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.AssemblyInfo.cs
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.csproj.CoreCompileInputs.cache
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.csproj.Up2Date
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.dll
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\refint\Tools.dll
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\Tools.pdb
+D:\Project\Study\Test_System\Tool\obj\Debug\net8.0\ref\Tools.dll

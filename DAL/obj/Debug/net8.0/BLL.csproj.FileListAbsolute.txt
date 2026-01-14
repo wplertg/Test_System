@@ -1,0 +1,11 @@
+D:\Project\Study\Test_System\DAL\bin\Debug\net8.0\BLL.deps.json
+D:\Project\Study\Test_System\DAL\bin\Debug\net8.0\BLL.dll
+D:\Project\Study\Test_System\DAL\bin\Debug\net8.0\BLL.pdb
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.dll
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\refint\BLL.dll
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\BLL.pdb
+D:\Project\Study\Test_System\DAL\obj\Debug\net8.0\ref\BLL.dll
