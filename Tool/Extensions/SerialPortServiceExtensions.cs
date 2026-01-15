@@ -27,13 +27,13 @@ namespace Tools.Extensions
                 {
                     return existing;
                 }
-
-                SerialPortService instance = name switch
-                {
-                    "COM1" => new SerialPortService("COM1", logger),
-                    "COM2" => new SerialPortService("COM2", logger),
-                    _ => throw new ArgumentException($"未知的串口标识: {name}")
-                };
+                SerialPortService instance = new SerialPortService(name,logger);
+                //SerialPortService instance = name switch
+                //{
+                //    "COM1" => new SerialPortService("COM1", logger),
+                //    "COM2" => new SerialPortService("COM2", logger),
+                //    _ => throw new ArgumentException($"未知的串口标识: {name}")
+                //};
 
                 cache[name] = instance;
                 return instance;

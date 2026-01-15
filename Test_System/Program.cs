@@ -8,6 +8,8 @@ using Tools.Common;
 using Tools.Extensions;
 using Tools.JWT;
 using Tools.middleware;
+using Tools.SignalRHub;
+using Tools.SignalRHub.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpContextAccessor();   // ? 必须
@@ -52,6 +54,7 @@ builder.Services
     });
 builder.Services.AddVisitorQuartzJobs();
 builder.Services.AddScoped<ExcelHelper>();
+builder.Services.AddScoped<ImageHelper>();
 builder.Services.AddScoped<JwtTokenHelper>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -60,6 +63,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTcpClients();
 builder.Services.AddSerialPorts();
 
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<DeviceNotifyService>();
 
 var app = builder.Build();
 
@@ -75,4 +80,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.UseMiddleware<ExceptionMiddleware>();
+app.MapHub<DeviceHub>("/hubs/device");
 app.Run();
