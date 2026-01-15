@@ -4,9 +4,9 @@
   </Folder>
   <Project Path="DAL/BLL.csproj" />
   <Project Path="IBLL/IBLL.csproj" />
-  <Project Path="IServer/IServer.csproj" />
+  <Project Path="IServer/IRepository.csproj" />
   <Project Path="Models/Models.csproj" />
-  <Project Path="Server/Server.csproj" />
+  <Project Path="Server/Repository.csproj" />
   <Project Path="Test_System/Test_System.csproj" />
   <Project Path="Tool/Tools.csproj" />
 </Solution>

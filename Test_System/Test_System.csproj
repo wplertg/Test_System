@@ -15,9 +15,9 @@
   <ItemGroup>
     <ProjectReference Include="..\DAL\BLL.csproj" />
     <ProjectReference Include="..\IBLL\IBLL.csproj" />
-    <ProjectReference Include="..\IServer\IServer.csproj" />
+    <ProjectReference Include="..\IServer\IRepository.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
-    <ProjectReference Include="..\Server\Server.csproj" />
+    <ProjectReference Include="..\Server\Repository.csproj" />
     <ProjectReference Include="..\Tool\Tools.csproj" />
   </ItemGroup>
 
