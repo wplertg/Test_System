@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DAL\BLL.csproj" />
-    <ProjectReference Include="..\IBLL\IBLL.csproj" />
+    <ProjectReference Include="..\DAL\Server.csproj" />
+    <ProjectReference Include="..\IBLL\IServer.csproj" />
     <ProjectReference Include="..\IServer\IRepository.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Server\Repository.csproj" />

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IBLL\IBLL.csproj" />
+    <ProjectReference Include="..\IBLL\IServer.csproj" />
     <ProjectReference Include="..\IServer\IRepository.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
