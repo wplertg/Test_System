@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Models.DTO;
 using Models.Result;
 
 namespace Test_System.Controllers.UserControllers
@@ -13,9 +14,10 @@ namespace Test_System.Controllers.UserControllers
         {
             _logger = logger;
         }
-        public async Task<ApiResult<string>> Login()
+        [HttpGet]
+        public async Task<ApiResult<string>> Login(LoginDTO login)
         {
-
+            
             return ApiResult<string>.Ok("成功");
         }
     }

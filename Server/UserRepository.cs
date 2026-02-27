@@ -20,6 +20,8 @@ namespace Repository
         }
         public UserLoginResultDTO Login(LoginDTO loginDTO)
         {
+            _logger.LogDebug("登录人员：{0}，登录密码：{1}", loginDTO.Username, loginDTO.Password);
+            
             throw new NotImplementedException();
         }
     }

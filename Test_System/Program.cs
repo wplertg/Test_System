@@ -68,6 +68,21 @@ builder.Services.AddSingleton<DeviceNotifyService>();
 
 var app = builder.Build();
 
+// 1. 配置 ForwardedHeadersOptions
+// 这一步告诉 ASP.NET Core：信任代理发来的头，把它们当成真实 IP
+var forwardedHeaderOptions = new ForwardedHeadersOptions
+{
+    ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedFor |
+                       Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedProto
+};
+
+// ⚠️ 注意：如果你在 Docker 或内网运行，默认的安全策略可能不信任你的代理
+// 在开发环境或确认安全的内网中，可以清空限制列表以信任所有代理：
+forwardedHeaderOptions.KnownNetworks.Clear();
+forwardedHeaderOptions.KnownProxies.Clear();
+
+app.UseForwardedHeaders(forwardedHeaderOptions);
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
